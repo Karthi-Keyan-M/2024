@@ -1,0 +1,13 @@
+#Left Half Pyramid
+for i in range(1,n+1):
+    print("  "*k,end=" ")
+    print("* "*i)
+    k-=1
+Input:
+  5
+Output:
+    *
+   **
+  ***
+ ****
+*****
