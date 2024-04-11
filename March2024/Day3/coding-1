@@ -1,0 +1,16 @@
+#Program to check whether the given number is prime number or not
+n=int(input())
+if n==1:
+      print("It is neither Prime nor composite")
+if n==2:
+      print("It is a Prime Number")
+else:
+      flag=0
+      for i in range(2,int(n**0.5)+1):
+                if n%i==0:
+                        flag=1
+                        break
+      if flag==0:
+              print("It is a Prime number")
+      else:
+              print("It is not a Prime Number")
