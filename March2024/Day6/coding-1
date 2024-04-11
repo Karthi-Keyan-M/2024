@@ -1,0 +1,18 @@
+"""Get an integer from the user and print lucky number if the sum of odd numbers in a number is even else print not lucky number.
+Sample Input 1:                            Sample Input 2:
+351                                        5638
+Output:                                    Output:
+Not lucky number                           Lucky number
+Explanation:                               Explanation:
+3+5+1=9.9 is not an even number            5+3=8. 8 is an even number"""
+n=int(input())
+s=0
+while n>0:
+    x=n%10
+    if x%2==1:
+        s+=x 
+    n//=10
+if s%2==0:
+    print("It is an Lucky Number")
+else:
+    print("It is not an Lucky Number")
