@@ -1,0 +1,7 @@
+#Find the power of a number without using pow() function.
+b=int(input())
+e=int(input())
+s=1
+for i in range(e):
+    s*=b
+print(s)
