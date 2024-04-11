@@ -1,0 +1,12 @@
+#Write a Program to Check if a number is an Armstrong number or not.
+n=int(input())
+s=0
+k=n
+while n>0:
+    x=n%10 
+    s+=x**3
+    n//=10
+if s==k:
+    print("It is an Armstrong Number")
+else:
+    print("It is not an Armstrong Number")
