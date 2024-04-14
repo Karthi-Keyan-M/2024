@@ -1,0 +1,8 @@
+"""Write a Program to convert the binary number into a decimal number."""
+n=input().strip()
+s=0
+l=len(n)-1
+for i in n:
+    s+=int(i)*(2**l)
+    l-=1
+print(s)
