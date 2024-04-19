@@ -1,0 +1,17 @@
+"""
+2. You have write a function that accepts, a string which length is "len", the string has some "#", in it you have to move all the hashes to the front of the string and return the whole string back and print it.
+Input:
+Move#Hash#to#Front
+Output:
+###MoveHashtoFront
+"""
+s=input().strip()
+s1=""
+c=0
+for i in s:
+    if i=="#":
+        c+=1
+    else:
+        s1+=i
+s1="#"*(c)+s1
+print(s1
