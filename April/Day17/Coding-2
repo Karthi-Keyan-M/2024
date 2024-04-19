@@ -1,0 +1,8 @@
+#octal to binary
+s=input().strip()
+l=["000","001","010","011","100","101","110","111"]
+k=""
+for i in s:
+    p=int(i)
+    k+=l[p]
+print(k)
