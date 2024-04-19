@@ -1,0 +1,16 @@
+#binary to octal
+s=input().strip()
+l1=list(s)
+l=len(s)
+if len(s)%3!=0:
+    k=len(s)%3 
+    for i in range(k):
+        l1.append('0')
+l2=["000","001","010","011","100","101","110","111"]
+l3=[l1[i:i+3] for i in range(0,len(l1),3)]
+k=""
+for i in l3:
+    s="".join(i)
+    p=l2.index(s)
+    k+=str(p)
+print(k)
