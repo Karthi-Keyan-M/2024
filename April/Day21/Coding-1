@@ -1,0 +1,12 @@
+#Program to find an alphabet by vowel or consonant
+s=input().strip()
+v="aeiou"
+c=""
+v1=""
+for i in s:
+    if i in v:
+        v1+=i
+    else:
+        c+=i
+print("vowels="+v1)
+print("consonants="+c)
