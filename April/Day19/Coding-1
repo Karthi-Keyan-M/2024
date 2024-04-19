@@ -1,0 +1,15 @@
+#Integer Palindrome Check: Write a program that checks if a given integer is a palindrome
+x=int(input())
+if x<=0:
+    print("It is not a palindrome")
+else:
+    rev=0
+    p=x
+    while x>0:
+        k=x%10 
+        rev=rev*10+k
+        x//=10
+    if rev==p:
+        print("It is a palindrome")
+    else:
+        print("It is not a palindrome")
