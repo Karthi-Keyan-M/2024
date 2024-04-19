@@ -1,0 +1,32 @@
+#linear search
+l=list(map(int,input().split()))
+k=int(input())
+p=1
+for i in l:
+    if i==k:
+        p=0
+if p==0:
+    print("Number is Found")
+else:
+    print("It is not Found")
+#binary search
+def binary(l,k):
+    lo=0
+    h=len(l)-1
+    m=0
+    while l<=h:
+        m=(lo+h)//2
+        if l[m]<k:
+            lo=m+1
+        elif l[m]>k:
+            h=m-1 
+        else:
+            return m 
+    return -1
+      
+l=list(map(int,input().split()))
+k=int(input())
+if binary(l,k)!=-1:
+    print("Number is Found")
+else:
+    print("Number is not found")
